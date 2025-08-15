@@ -1,138 +1,189 @@
-body {
-    font-family: Arial;
-    margin: 0;
-    background-color: #f5f7fa;
-    color: black;
-}
+   body {font-family: Arial; margin: 0; background-color: #f5f7fa; color:solid black;}
+    header {
+        text-align: center;
+      padding: 20px;
+      padding-right: 40px;
+      padding-left: 40px;
+      margin: 50px;
+      border-radius: 10px;
+      background:#ffffff;
+    }
+    #input {
+        font-size: larger;
+        margin-left: 120px;
+        width: 250px;
+        height: 35px;
+        border-color: 2px solid ;
+        border-radius: 10px;
+        background-color: #ffffff;
+        
+    }
+    #Add {
+        font-size: larger;
+        color: aliceblue;
+        margin-left: auto;
+        height: 34px;
+        width: 35;
+        background-color:#4A4E69;
+        border-color:#4A4E69;
+        border-radius: 5px;
 
-header {
-    text-align: center;
-    padding: 20px 40px;
-    margin: 50px;
-    border-radius: 10px;
-    background: #ffffff;
-}
+    }
+    #todocont {
+        margin-left: 50px;
+    }
+    .check{
+      appearance: none;
+      -webkit-appearance: none;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 2px solid gray;
+      background-color: white;
+      cursor: pointer;
+      position: relative;
+      margin-right: 10px;
+    
+    }
+    
+    .check:checked::after {
+        content: "✔";
+        position: absolute;
+        top: -1; left: -1;
+        width: 23px; height: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #6a994e ;
+        color: white;
+        margin-right: 10px;
 
-#input {
-    font-size: larger;
-    margin-left: 120px;
-    width: 250px;
-    height: 35px;
-    border-radius: 10px;
-    background-color: #ffffff;
-}
+    
+        }
 
-#Add {
-    font-size: larger;
-    color: aliceblue;
-    height: 34px;
-    width: 35px;
-    background-color: #4A4E69;
-    border-radius: 5px;
-}
 
-#todocont {
-    margin-left: 50px;
-}
+    li {
+        display: flex;
+        align-items: center;
+        margin: 7px 35px;
+        border-radius: 4px;
+        background-color: #dbe4ea;
+        padding: 1px 15px;
+        padding-right: 0px;
+        font-family: Arial, sans-serif;
+        font-size: larger;
+        transition: opacity 2s ease;
+        
+            
+        }
 
-.check {
-    appearance: none;
-    -webkit-appearance: none;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: 2px solid gray;
-    background-color: white;
-    cursor: pointer;
-    position: relative;
-    margin-right: 10px;
-}
+    li .span{
+        margin-left: 1px;
+        flex-grow: 1;
+        text-align: left;
+    }
 
-.check:checked::after {
-    content: "✔";
-    position: absolute;
-    width: 23px;
-    height: 23px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: #6a994e;
-    color: white;
-}
 
-li {
-    display: flex;
-    align-items: center;
-    margin: 7px 35px;
-    border-radius: 4px;
-    background-color: #dbe4ea;
-    padding: 1px 15px;
-    font-size: larger;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
+    .bt {
+        background-color: rgba(122, 76, 167, 0.7);
+        border: none;
+        border-radius: 5px;
+        margin-top: auto;
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* push to end */
+        margin-left: 6px;      /* 2px gap between buttons */
+        margin-right: 0;
+    }
+            
+    .select{
+        background-color: rgba(122, 76, 167, 0.7);
+        border: none;
+        border-radius: 5px;
+        margin-top: auto;
+        height: 40px;
+        width: 90px;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+    }
 
-li .span {
-    margin-left: 1px;
-    flex-grow: 1;
-    text-align: left;
-}
 
-.bt, .select, .edit {
-    background-color: rgba(122, 76, 167, 0.7);
-    border: none;
-    border-radius: 5px;
-    height: 40px;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .edit{
+        background-color: rgba(122, 76, 167, 0.7);
+        border: none;
+        border-radius: 5px;
+        margin-top: auto;
+        height: 40px;
+        width: 50px;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 6px; 
+    }
 
-.bt {
-    width: 40px;
-    margin-left: 6px;
-}
 
-.select {
-    width: 90px;
-    font-size: 20px;
-    margin-left: auto;
-}
+   
+    #deleteall {
+        font-family:sans-serif;
+        font-size: larger;
+        color: aliceblue;
+        margin-left: auto;
+        height: 35px;
+        width: 100px;
+        background-color: #c0392b;
+        border-color: #c0392b;
+        border-radius: 5px;
+    }
 
-.edit {
-    width: 50px;
-    margin-left: 6px;
-}
 
-#deleteall {
-    font-size: larger;
-    color: aliceblue;
-    height: 35px;
-    width: 100px;
-    background-color: #c0392b;
-    border-radius: 5px;
-}
+    #deleteall:hover {
+        opacity: 0.9;
+        transform: scale(1.02);
+    }
 
-#deleteall:hover,
-#add:hover,
-.bt:hover,
-#input:hover,
-.check:hover {
-    opacity: 0.9;
-    transform: scale(1.02);
-}
+    #add:hover {
+        opacity: 0.9;
+        transform: scale(1.02);
+    }
+    .bt:hover {
+        opacity: 0.9;
+        transform: scale(1.02);
+    }
+    #input:hover {
+        opacity: 0.9;
+        transform: scale(1.02);
+    }
+    .check:hover {
+        opacity: 0.9;
+        transform: scale(1.02);
+    }
 
-.line {
-    text-decoration: line-through;
-}
+    .line{
+        text-decoration: line-through;
+    }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #e5f2ff;
-    text-align: center;
-    padding: 20px;
+
+    footer {
+        margin: auto;
+        position: fixed;
+        bottom: 0,auto;
+        left: 0;
+        width: 100%;
+        background-color: #e5f2ff;
+        text-align: center; 
+        padding: 20px;
 }
