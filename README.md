@@ -1,6 +1,6 @@
 # To-Do List
 
-A basic To-Do List website made using HTML and CSS. (JavaScript will be added later.)
+A basic To-Do List website made using HTML, CSS, JavaScript
 
 ## Features
 
@@ -12,7 +12,7 @@ A basic To-Do List website made using HTML and CSS. (JavaScript will be added la
 
 - HTML
 - CSS
-- (JavaScript coming soon)
+- JavaScript 
 
 ## How to Use
 
