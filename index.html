@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>Todolist</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <header>
-        <h1>To-do list</h1>
-    </header>
-    <div id="bg">
-        <input id="input" type="text" placeholder="Add your task" maxlength="30">
-        <button id="Add">+</button>
-        <button id="deleteall">Delete All</button>
-        <div id="todocont">
-            <ul id="todo"></ul>
+    <div class="container">
+        <div id="todoapp">
+            <h1>To-do List 📝</h1>
+            <div id="ip">
+                <input type="text" id="ipbox" placeholder="Add your text">
+                <button onclick="add(event)">Add</button>
+            </div>
+                <ul id="lst">
+                </ul>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 Sameem | All Rights Reserved</p>
-    </footer>
+    <p>&copy; 2025 Sameem | All Rights Reserved</p>
+   </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
 
 
