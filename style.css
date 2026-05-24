@@ -102,7 +102,7 @@ ul li::before {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-image: url(video.png);
+    background-image: url(unchecked.png);
     color: #4e085f;
     background-size: cover;
     background-position: center;
